@@ -7,21 +7,21 @@ function getRandomIntInclusive(min, max){
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;}//The maximum is inclusive and the minimum is inclusive
-                                    
+
 const  pdx = {
     name: 'PDX Airport',            //change const names!!!!!
     min: 23,
     max: 65,
     avg: 6.3,
     cookiesSold: hourlySales
-    
 };
 
-const Powells = {
+const powells = {
+    name: 'Powells Bookstore',
     min: 11,
     max: 38,
     avg: 3.7,
-    hourlySales: hourlySales
+    cookiesSold: hourlySales
 };
 
 const stJohns = {
@@ -60,16 +60,7 @@ function hourlySales(){
     this.salesPerHour = salesPerHour;
 }
 pdx.cookiesSold();
+powells.cookiesSold();
 console.log(pdx);
-
-// for (let i = 0; i <= hours.length; i++){
-//     pdxAirport.hourlySales(pdxAirport.min, pdxAirport.max);
-//     Powells.hourlySales(Powells.min, Powells.max);
-//     stJohns.hourlySales(stJohns.min, stJohns.max);
-//     waterfront.hourlySales(stJohns.min, stJohns.max);
-//     pioneerSquare.hourlySales(pioneerSquare.min, pioneerSquare.max);
-//}
-//console.log(locations);
 console.log(locations);
-console.log(numCustomers);
-
+console.log(powells);
