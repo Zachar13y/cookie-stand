@@ -1,6 +1,19 @@
 
-/* 
-table.bids {
-    width: 
+h1 {
+    font-family: sans-serif;
+    font-size:  5em;
+    font-weight: normal;
+    color: blue;
+    font-size: 40px;
+    background-color: lightblue;
+    background-color: #bb3281;
+    background-color: rgba(200, 0, 0, 7);
+}
 
-} */
+
+p {
+    font-size: 40px;
+    background-color: lightblue;
+    background-color: #bb3281;
+    background-color: rgba(255, 0, 0, 7);
+}

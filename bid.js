@@ -24,3 +24,20 @@
 //     }
 
 
+function Cookie (type, price) {
+    this.type = type;
+    this.price = price;
+}
+
+Cookie.prototype.bakery = 'Alchemy Lab';
+
+Cookie.prototype.addChocolateChips = function () {
+    this.type = this.type ('with chocolate chips');
+};
+
+const cookie1 = new Cookie( 'sugar, $2');
+const cookie2 = new Cookie( 'spice, $3');
+
+
+console.log (cookie1);
+console.log (cookie2);
