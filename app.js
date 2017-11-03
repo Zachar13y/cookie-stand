@@ -27,7 +27,7 @@ function Store (name, min, max, avg) {
         };
         this.salesByHour.push(oneHour);
     }
-
+    
     console.log( this.salesByHour );
 }
 
@@ -67,9 +67,22 @@ Store.prototype.build = function () {
         tdCookie.textContent = this.salesByHour[i].cookiesSold;
         trCookie.appendChild(tdCookie);
     }
+
+    let totals = 0;
+
+    for (let i = 0; i < hours.length; i++){
+        totals = totals + this.salesByHour[i].cookiesSold;
+
+        console.log (totals);
+    }
+
 };
 
 console.log( 'airport.row = ', airport.row );
+
+// for (let i = 0; i < hours.length; i++){
+//     const totals = ProgressEvent.total(numCookies)
+//}
 
 // const tbody = document.getElementById('table-body');
 // tbody.appendChild(airportRow);
@@ -80,6 +93,10 @@ powells.build();
 stjohns.build();
 waterfront.build();
 hawthorne.build();
+//render()mainList;
 
 
 // renderHoursRow ();
+
+console.log (airport);
+
